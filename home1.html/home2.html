@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./home2.css" />
+    <title>Liraz Kahlon</title>
+    <script src="https://kit.fontawesome.com/6f50513901.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <section id="first">
+        <nav>
+          <ul>
+            <li><a href="./home2.html">Home</a></li>
+            <li><a href="./AboutMe.html">About Me</a></li>
+            <li><a href="./Work.h">Resume</a></li>
+            <li><a href="./Exprience.html">Project</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="header-text">
+        <p>Endustrial Engineering Student</p>
+        <h1>Hi, I'm <span>Liraz</span> from Israel</h1>
+      </section>
+    </header>
+    <!----about-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./pics/personal.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>lorm ipsum</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>ui</span><br />deisgining</li>
+                <li><span>ui</span><br />deisgining</li>
+                <li><span>ui</span><br />deisgining</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>ui</span><br />deisgining</li>
+                <li><span>ui</span><br />deisgining</li>
+                <li><span>ui</span><br />deisgining</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span>ui</span><br />deisgining</li>
+                  <li><span>ui</span><br />deisgining</li>
+                  <li><span>ui</span><br />bla</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----services-->
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web</h2>
+                <p> here nasim</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>web</h2>
+                <p> here nasim</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--mywork-->
+    <div id="projects">
+        <div class="container">
+        <h1 class="sub-title"> My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./pics/personal.jpg">
+                <div class="layer">
+                    <h3>social</h3>
+                    <p>blabla</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./pics/personal.jpg">
+                <div  class="layer">
+                    <h3>social</h3>
+                    <p>blabla</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./pics/personal.jpg">
+                <div class="layer">
+                    <h3>social</h3>
+                    <p>blabla</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 clss="sub-title">Contact me </h1>
+                    <p></i>liraz0807@gmail.com</p>
+                    <p>0506940131</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100001870050116"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/liraz-kachlon-0a86b2229/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"> 
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="sumbit">Sumbit</button>
+                    </form>
+                </div>
+                
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+  </body>
+</html>
